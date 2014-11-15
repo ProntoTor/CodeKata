@@ -15,3 +15,16 @@ input(10) -> "Buzz"
 input(15) -> "FizzBuzz"
 input(30) -> "FizzBuzz"
 '''
+
+import unittest
+
+class FizzBuzzTest(unittest.TestCase):
+	def test_input_1_should_return_sting_1(self):
+		number = 1
+		actual = FizzBuzz.take(number)
+		expected = '1'
+
+		self.assertEquals(expected, actual)
+
+if __name__ == '__main__':
+    unittest.main()
