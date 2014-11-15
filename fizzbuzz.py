@@ -18,13 +18,20 @@ input(30) -> "FizzBuzz"
 
 import unittest
 
+
 class FizzBuzzTest(unittest.TestCase):
 	def test_input_1_should_return_sting_1(self):
+		fizzbuzz = FizzBuzz()
 		number = 1
-		actual = FizzBuzz.take(number)
+		actual = fizzbuzz.take(number)
 		expected = '1'
 
 		self.assertEquals(expected, actual)
+
+
+class FizzBuzz:
+	def take(self, number):
+		return '1'
 
 if __name__ == '__main__':
     unittest.main()
